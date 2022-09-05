@@ -29,6 +29,9 @@ a[href] {
     letter-spacing: 3px;
     font-weight: 600;
     text-decoration: none;
+    &:hover {
+      animation: pulsate 0.8s ease-in-out infinite;
+    }
   }
 
   .nav-links {
@@ -158,5 +161,16 @@ a[href] {
   .contact-item {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
   }
 }
