@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import  Link  from 'next/link';
+import Link from 'next/link';
 
 function About() {
   return (
@@ -25,7 +25,6 @@ function About() {
             <Link href="/contact">
               <a className="cta">Contact Me!</a>
             </Link>
-
           </div>
         </div>
       </section>
