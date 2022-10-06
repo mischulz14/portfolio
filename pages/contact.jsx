@@ -17,8 +17,8 @@ function Contact() {
               Contact
             </h1>
             <p className="description">
-              Thanks for checking out my page! If you want to work together just
-              take a look at my contact information:
+              Thanks for checking out my page! If you want to work together
+              write me an email or call me!
             </p>
             <ul className="contact-links">
               <li className="contact-item">Email: mi.schulz@hotmail.com</li>

@@ -78,6 +78,7 @@ a[href] {
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
+  animation: appear 1s ease-in;
 
   .container {
     display: flex;
@@ -125,18 +126,33 @@ a[href] {
 }
 
 .portfolio-wrapper {
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 50px;
+  row-gap: 2rem;
 
   .portfolio-item {
-    width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
 
-    .portfolio-image {
-      max-width: 100%;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+      filter: grayscale(50%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
 
     .portfolio-name {
@@ -172,5 +188,15 @@ a[href] {
 
   50% {
     transform: scale(1.15);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

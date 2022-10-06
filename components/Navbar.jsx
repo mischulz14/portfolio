@@ -14,7 +14,7 @@ function Navbar({ router }) {
     <nav className="navbar">
       <div className="container">
         <Link href="/">
-          <a className="logo">Michi.</a>
+          <a className="logo">MS.</a>
         </Link>
 
         <ul className="nav-links">
