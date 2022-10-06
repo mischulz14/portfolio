@@ -78,7 +78,11 @@ a[href] {
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
-  animation: appear 1s ease-in;
+  animation: appear 0.8s ease-in;
+
+  img {
+    animation: appear 0.8s ease-in;
+  }
 
   .container {
     display: flex;
@@ -178,6 +182,17 @@ a[href] {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.tech-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tech-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
 @keyframes pulsate {

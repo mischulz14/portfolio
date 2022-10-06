@@ -1,9 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 
 function Home() {
+  useEffect(() => {
+    document.title = 'Michael Schulz Portfolio';
+  }, []);
   return (
     <>
       <Head>
